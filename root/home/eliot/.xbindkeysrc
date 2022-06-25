@@ -1,0 +1,15 @@
+"amixer -D pipewire set Master 5%+"
+  2    m:0x0 + c:123
+
+"amixer -D pipewire set Master 5%-"
+  2    m:0x0 + c:122
+
+"amixer -D pipewire set Master toggle"
+  2    m:0x0 + c:121
+
+"brillo -qA 2"
+  2    m:0x0 + c:233
+
+"brillo -qU 2"
+  2    m:0x0 + c:232
+
