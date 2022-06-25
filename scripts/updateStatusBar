@@ -1,9 +1,0 @@
-#! /bin/sh
-DATETIME=$(date +"%I:%M %p | %a %m/%d/%Y")
-BATT="$( cat /sys/class/power_supply/BAT0/capacity)"
-if [[ $(nmcli con show --active) == "" ]]; then
-	NETWORK="NO INTERNET"
-else
-	NETWORK=""
-fi
-xsetroot -name " $NETWORK | $BATT% | $DATETIME "
