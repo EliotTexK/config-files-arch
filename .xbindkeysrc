@@ -1,0 +1,12 @@
+"amixer -c 0 set Master 5dB+"
+  2    m:0x0 + c:123
+
+"amixer -c 0 set Master 5dB-"
+  2    m:0x0 + c:122
+
+"brillo -qA 2"
+  2    m:0x0 + c:233
+
+"brillo -qU 2"
+  2    m:0x0 + c:232
+
