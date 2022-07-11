@@ -1,5 +1,0 @@
-#!/usr/bin/bash
-# opens notes in dmenu
-FILE=$(ls ~/notes | dmenu "$@" -p "Edit Notes:")
-if [[ $FILE == "" ]]; then exit; fi
-alacritty -e bash -c "vi ~/notes/$FILE"
