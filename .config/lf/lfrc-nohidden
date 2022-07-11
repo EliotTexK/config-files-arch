@@ -1,0 +1,4 @@
+# same as normal config without hidden files
+source ~/.config/lf/lfrc
+
+set nohidden

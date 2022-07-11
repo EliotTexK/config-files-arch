@@ -1,0 +1,6 @@
+set hidden
+set drawbox
+
+map <enter> open
+
+cmd open $vi $fx
