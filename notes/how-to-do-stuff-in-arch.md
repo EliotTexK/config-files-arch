@@ -112,6 +112,9 @@ Useful when not running a gui and you want multiple terms
 # Bash
 * global config file is `/etc/bash.bashrc`
 * when writing a prompt, you MUST enclose non-printable characters in `\[` and `\]`, or else you will get the issue where text doesn't wrap properly. This mostly applies to ANSI escape sequences.
+# Dash
+* A faster shell than bash (POSIX compliant). You can softlink /bin/sh to /usr/bin/dash instead of the default bash for minor performance improvements.
+* Be careful. Scripts that are not POSIX compliant won't run by default if you do this (without the handy little #!/usr/bin/bash line).
 # Pacman
 * refresh database: `pacman -Fy`
 * search package databases for filename: `pacman -F filename`

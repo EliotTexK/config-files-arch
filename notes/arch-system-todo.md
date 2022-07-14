@@ -9,7 +9,8 @@
 * create a widget that can show brightness/volume
 * configure tmux-tilish plugin: needs to have the same keybinds as DWM, and start with the same master/stack layout
 * learn vim: learn to integrate i/o from commands like xsel, etc
-* configure autocomplete/ide utilities for editing code in vim; need code completion for libraries in C/C++, and python, but maybe also lua, js, java
+* DONE configure autocomplete/ide utilities for editing code in vim; need code completion for libraries in C/C++, and python, but maybe also lua, js, java
 * integrate gpg (or some other secure encryption) with vim to password protect passes.txt
 * create script for uploading/downloading dotfiles between devices using git repo (some files will differ between devices)
 * create install script/tutorial for setting up everything
+* integrate image preview with lf
