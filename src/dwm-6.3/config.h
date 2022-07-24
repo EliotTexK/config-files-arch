@@ -7,15 +7,13 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 0;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Source Code Pro:size=15" };
 static const char dmenufont[]       = "Source Code Pro:size=15";
-static const char col_gray1[]       = "#222222";
-static const char col_gray2[]       = "#444444";
-static const char col_gray3[]       = "#bbbbbb";
-static const char col_gray4[]       = "#eeeeee";
-static const char col_brown[]        = "#705c51";
+static const char col_1[]       = "#282a36";
+static const char col_2[]       = "#f8f8f2";
+static const char col_3[]       = "#caa9fa";
 static const char *colors[][3]      = {
     /*               fg         bg         border   */
-    [SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-    [SchemeSel]  = { col_gray4, col_brown,  col_brown  },
+    [SchemeNorm] = { col_2, col_1, col_1 },
+    [SchemeSel]  = { col_2, col_3,  col_2  },
 };
 
 /* tagging */
@@ -56,7 +54,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmdd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_brown, "-sf", col_gray4, NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_1, "-nf", col_3, "-sb", col_3, "-sf", col_2, NULL };
 static const char *lf_hidden_cmd[] = { "lf_wrapper_hidden", NULL };
 static const char *lf_nohidden_cmd[] = { "lf_wrapper_nohidden", NULL };
 static const char *termcmd[]  = { "alacritty", NULL };

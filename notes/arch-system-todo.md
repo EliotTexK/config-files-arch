@@ -14,3 +14,4 @@
 * create script for uploading/downloading dotfiles between devices using git repo (some files will differ between devices)
 * create install script/tutorial for setting up everything
 * integrate image preview with lf
+* check out a.vim

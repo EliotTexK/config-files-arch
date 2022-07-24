@@ -72,9 +72,14 @@ Some useful settings for `.vimrc`
 ## Useful commands to remember
 * copy an entire line: `yy`
 * paste the output of a command (useful with xsel): `:read !command`
+* Ctrl+V block select mode (useful for removing leading characters from multiple lines
+* `:set expandtab`, then `:retab!` will convert tabs to spaces
 ## Pasting From the Clipboard
 * `https://vim.fandom.com/wiki/GNU/Linux_clipboard_copy/paste_with_xclip`
 * The best package for this is `xsel`. Install it and then bind to vim commands.
+* copy current line: `:.w !xsel -b`
+* copy whole document: `:w !xsel -b`
+* paste from selection: `:r! xsel -b`
 ## Autocomplete (CoC)
 * install vim-plug
 * use vim-plug to install CoC vim plugin

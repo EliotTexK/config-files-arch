@@ -3,4 +3,13 @@ set drawbox
 
 map <enter> open
 
-cmd open $vi $fx
+cmd open ${{
+	filename=$(basename $f)
+	extension="${filename##*.}"
+	case $extension in
+		png) feh $f;;
+		jpg) feh $f;;
+		mp4) vlc $f;;
+		*) vi $f;;
+	esac
+}}

@@ -1,10 +1,16 @@
 set linebreak
 set number
 syntax on
+
+" you need both of these settings for proper indents and autoindents
 set tabstop=4
+set shiftwidth=4
 
 set nocompatible
 set backspace=2
+
+" set colors for selected text (otherwise some selected text will be invisible)
+hi Visual cterm=none ctermbg=darkgrey ctermfg=cyan
 
 " settings from coc.nvim GitHub
 " vim-plug plugins
